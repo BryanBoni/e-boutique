@@ -1,10 +1,136 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 27 août 2017, 01:49:38
-    Author     : Cloud4Msi
-*/
 
+
+/*   Start : Layout style */
+#toolMenu{
+    
+}
+
+#toolMenu table{
+    width: 100%
+}
+
+#toolMenu table td{
+    width: 100%;
+    
+}
+
+#searchBar{
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 20px;
+    width: 100%;
+    font-size: 16px;
+    float: right;
+}
+
+#searchBar:hover{
+    background-color: #cccccc;
+}
+
+#searchBarButton{
+    background-color: transparent;
+    border: 0px hidden #000;
+}
+
+#searchBarText{
+    background-color: transparent;
+    border: 0px hidden #000;
+    color: black;
+
+}
+
+#storeTool{
+    background-color: #e0e0e0;
+    padding: 10px;
+    width: fit-content;
+    margin: 20px;
+    text-align: center;
+    float: right;
+    font-size: 16px;
+    height: 44px;
+}
+
+#storeTool:hover{
+    background-color: #cccccc;
+}
+
+#storeTool td{
+    padding: 2px;
+}
+
+#storeTool a{
+    text-decoration: none;
+    color: #666666;
+}
+
+#storeTool img{
+    width: 35px;
+    height: 100%;
+}
+
+.navbar-red{
+    background-color: #ff6633;
+    color: white;
+    border: 1px #ff9933 solid;
+    border-radius: 0px;
+}
+
+
+/*    END : Layout style */
+
+
+/* -----------------navbar tools --------------*/
+.navbar-red a{
+    color: white;
+}
+
+.navbar-red a:hover{
+    /*color : black;*/
+    background-color: #ff9933;
+
+    background-image: none;
+}
+
+.navbar-red .navbar-nav a{
+    color: white;
+}
+
+.navbar-red .navbar-nav a:hover{
+    /*color : black;*/
+    background-color: #ff9933;
+
+    background-image: none;
+}
+
+
+.navbar-red .nav .open>a{
+    /*color : black;*/
+    background-color: #ff9933;
+
+    background-image: none;
+}
+
+.navbar-red .nav>li>a:focus, .nav>li>a:hover{
+    background-color: #ff9933;
+}
+
+
+.navbar-red .navbar-toggle{
+    background-color: white;
+    color: #ff6633;
+}
+
+.navbar-red .navbar-toggle:hover{
+    background-color: #ffcc99;
+}
+
+.navbar-red .navbar-toggle .icon-bar{
+    background-color: #ff6633;
+}
+
+.navbar-red .dropdown-menu{
+    color: white;
+    background-color: #ff6633;
+
+}
+/* -----------------END : navbar tools --------------*/
