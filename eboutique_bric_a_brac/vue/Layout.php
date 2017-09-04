@@ -2,8 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="shortcut icon" href="<?php if($home == 1){echo "";}else{ echo "../";}?>ressources/OG_icon.ico" type="image/gif">
         <title><?php echo $title ?></title>
-        <?php $nbProduct = 2; ?>
+
         <!--Bootstrap & Jquery call -->
         <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 
@@ -19,6 +20,7 @@
         <?php echo $linkHead ?>
     </head>
     <body>
+        <a href="#" class="back-to-top">Back to Top</a>
         <div class="container-fluid">
             <div id="header">
                 <div class="row hidden-xs" id="toolMenu">
@@ -28,8 +30,12 @@
                             <td>
                                 <form method="POST" action="#" id="searchBar">
                                     <b>
-                                        <input type="search" id="searchBarText" placeholder="Rechercher nos produits"/>
-                                        <button type="submit" id="searchBarButton"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                        <table>
+                                            <tr>
+                                                <td><input type="search" id="searchBarText" placeholder="Rechercher nos produits" aria-label="Rechercher nos produits"/></td>
+                                                <td><button type="submit" id="searchBarButton"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></td>
+                                            </tr>
+                                        </table>
                                     </b>
                                 </form>
                             </td>
@@ -38,7 +44,13 @@
                                     <a href="#"><table><tr><td><b>Panier </b></td> <td><b><span class="glyphicon glyphicon-shopping-cart"></span></b> </td> <td> <span class="badge" style="background-color: #ff6666;"><?php echo $nbProduct ?></span></td></tr></table></a>
                                 </div>   
                             </td>
-
+                            
+                            <td>
+                                <div id="storeTool">
+                                    <a href="#"><table><tr> <td><b>Mon</b></td> <td><b> compte </b></td> <td><b><span class="glyphicon glyphicon-user"></span></b> </td></tr></table></a>
+                                </div>   
+                            </td>
+                            
                             <td>
                                 <div id="storeTool">
                                     <a href="#"><b><img src="../ressources/flags/Flags PNG/France.png" /></b></a>
@@ -66,21 +78,22 @@
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catégorie <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
+                                            <li><a href="#">Electroménager</a></li>
+                                            <li><a href="#">Mobilier</a></li>
+                                            <li><a href="#">Bricolage</a></li>
                                             <li role="separator" class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">Informatique</a></li>
                                             <li role="separator" class="divider"></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="#">Produits populaires</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Conseil client</a></li>
                                 </ul>
 
                                 <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Contact</a></li>
                                     <form class="navbar-form navbar-left hidden-sm hidden-lg hidden-md">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Search">
@@ -104,5 +117,12 @@
 
             </div>            
         </div>
+
+        <?php echo $linkFooter ?>
+        <script src="<?php if ($home == 1) {
+            echo "";
+        } else {
+            echo "../";
+        } ?>modele/javascript/backOnTop.js"></script>
     </body>
 </html>
