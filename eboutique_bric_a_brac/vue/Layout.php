@@ -2,7 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="<?php if($home == 1){echo "";}else{ echo "../";}?>ressources/OG_icon.ico" type="image/gif">
+        <link rel="shortcut icon" href="<?php if ($home == 1) {
+    echo "";
+} else {
+    echo "../";
+} ?>ressources/OG_icon.ico" type="image/gif">
         <title><?php echo $title ?></title>
 
         <!--Bootstrap & Jquery call -->
@@ -17,12 +21,13 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="../vue/main.css">
-        <?php echo $linkHead ?>
+<?php echo $linkHead ?>
     </head>
     <body>
         <a href="#" class="back-to-top">Back to Top</a>
-        <div class="container-fluid">
-            <div id="header">
+
+        <div id="header">
+            <div class="container-fluid">
                 <div class="row hidden-xs" id="toolMenu">
                     <table>
                         <tr>
@@ -44,13 +49,13 @@
                                     <a href="#"><table><tr><td><b>Panier </b></td> <td><b><span class="glyphicon glyphicon-shopping-cart"></span></b> </td> <td> <span class="badge" style="background-color: #ff6666;"><?php echo $nbProduct ?></span></td></tr></table></a>
                                 </div>   
                             </td>
-                            
+
                             <td>
                                 <div id="storeTool">
                                     <a href="#"><table><tr> <td><b>Mon</b></td> <td><b> compte </b></td> <td><b><span class="glyphicon glyphicon-user"></span></b> </td></tr></table></a>
                                 </div>   
                             </td>
-                            
+
                             <td>
                                 <div id="storeTool">
                                     <a href="#"><b><img src="../ressources/flags/Flags PNG/France.png" /></b></a>
@@ -94,11 +99,13 @@
 
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="#">Contact</a></li>
-                                    <form class="navbar-form navbar-left hidden-sm hidden-lg hidden-md">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Search">
+                                    <form method="POST" action="#" class="navbar-form navbar-left hidden-sm hidden-lg hidden-md">
+                                        <div class="input-group" style="margin: 0px 20px;">
+                                            <input type="text" class="form-control" placeholder="Rechercher nos produits">
+                                            <span class="input-group-btn">
+                                                <button type="submit" class="btn btn-warning"><b class="glyphicon glyphicon-search" aria-hidden="true"></b></button>
+                                            </span>
                                         </div>
-                                        <button type="submit" class="btn btn-default"><b class="glyphicon glyphicon-search" aria-hidden="true"></b></button>
                                     </form>
                                 </ul>
                             </div><!-- /.navbar-collapse -->
@@ -106,23 +113,20 @@
                     </nav>
                 </div>
             </div>
-
-            <div id="body">
-                <div class="row">
-                    <?php echo $content ?>
-                </div>
-            </div>
-
-            <div id="footer">
-
-            </div>            
         </div>
 
+        <div id="body" class="container-fluid">
+            <div class="row">
+                <?php echo $content ?>
+            </div>
+        </div>
+
+        <div id="footer">
+
+        </div>            
+
+
         <?php echo $linkFooter ?>
-        <script src="<?php if ($home == 1) {
-            echo "";
-        } else {
-            echo "../";
-        } ?>modele/javascript/backOnTop.js"></script>
+        <script src="<?php if ($home == 1) { echo "";} else { echo "../";}?>modele/javascript/backOnTop.js"></script>
     </body>
 </html>

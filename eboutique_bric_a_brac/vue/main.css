@@ -5,10 +5,12 @@
     border: 1px #ff9933 solid;
     border-radius: 0px;
     font-size: 16px;
+
 }
 
 .navbar-red .navbar-brand{
     font-size:  20px;
+
 }
 
 .navbar-red a{
