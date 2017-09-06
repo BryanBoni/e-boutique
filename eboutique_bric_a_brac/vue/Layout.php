@@ -2,11 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="<?php if ($home == 1) {
-    echo "";
-} else {
-    echo "../";
-} ?>ressources/OG_icon.ico" type="image/gif">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="<?php if ($home == 1) { echo "";} else { echo "../";} ?>ressources/OG_icon.png" type="image/gif">
         <title><?php echo $title ?></title>
 
         <!--Bootstrap & Jquery call -->
@@ -85,8 +82,6 @@
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catégorie <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Electroménager</a></li>
-                                            <li><a href="#">Mobilier</a></li>
                                             <li><a href="#">Bricolage</a></li>
                                             <li role="separator" class="divider"></li>
                                             <li><a href="#">Informatique</a></li>
@@ -94,6 +89,8 @@
                                             <li><a href="#">Produits populaires</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="#">Top produits</a></li>
+                                    <li><a href="#">Carte cadeau</a></li>
                                     <li><a href="#">Conseil client</a></li>
                                 </ul>
 
