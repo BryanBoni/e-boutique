@@ -121,8 +121,10 @@
             </div>
         </div>
 
-        <div id="footer">
-
+        <div id="footer" class="container-fluid">
+            <div class="row">
+                <p>Ce site a été développé par <a>Bryan Boni</a> en collaboration avec <a>Andréas Ballis</a></p>
+            </div>
         </div>            
 
 

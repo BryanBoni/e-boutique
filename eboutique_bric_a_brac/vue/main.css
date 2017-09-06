@@ -143,6 +143,7 @@
 
 #body{
     margin: 20px;
+    color: #ff6633;
 }
 
 a.back-to-top {
@@ -165,6 +166,25 @@ a.back-to-top {
     border-radius: 10%;
 }
 
+#footer{
+    color: white;
+    background-color: #ff6633;
+    font-size: 16px;
+}
+
+#footer p{
+    margin: 10px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #ffcc99;
+}
+
+#footer a:hover{
+    color: #6666ff;
+    cursor: pointer;
+}
 /* -----------------END : Layout style ------------------*/
 
 
@@ -175,7 +195,14 @@ a.back-to-top {
 }
 
 #topList hr{
-    border: 1px #000 solid;
+    border: 1px #ffcc99 solid;
 }
 
+#homeListElt{
+    text-align: center;
+}
+
+#homeListElt img{
+    width: 100%;
+}
 /* ----------------- END : index.php -------------------*/
