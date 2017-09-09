@@ -1,10 +1,11 @@
 /* -----------------navbar tools --------------*/
 .navbar-red{
-    background-color: white;/*#000000*/;
-    color: black;
+    background-color: #6666ff;/*#000000*/;
+    color: #ffffff;
     /*border: 1px #444444 solid;*/
     border-radius: 0px;
     font-size: 16px;
+    font-weight: bold;
     margin: 0px;
 }
 
@@ -15,47 +16,49 @@
 
 .navbar-red .navbar-brand:hover{
     font-size:  20px;
-    color: white;
+    color: #ffffff;
 }
 
 .navbar-red a{
-    color: black;/* white;*/
+    color: #ffffff;/* #ffffff;*/
 }
 
 .navbar-red a:hover{
     /*color : black;*/
-    background-color: #444444;
+    background-color: #003366;
 
     background-image: none;
 }
 
 .navbar-red .navbar-nav a{
-    color: black;/* white;*/
+    color: #ffffff;/* #ffffff;*/
+    font-weight: bold;
+    
 }
 
 .navbar-red .navbar-nav a:hover{
     /*color : black;*/
-    background-color: #444444;
-    color: white;
+    background-color: #003366;
+    color: #ffffff;
     background-image: none;
 }
 
 .navbar-red .nav .open>a{
     /*color : black;*/
-    background-color: #444444;
-
+    background-color: #003366;
     background-image: none;
 }
 
 .navbar-red .nav>li>a:focus, .nav>li>a:hover{
-    background-color: #444444;
-    color: white;
+    background-color: #003366;
+
+    color: #ffffff;
 }
 
 
 .navbar-red .navbar-toggle{
-    background-color: white;
-    color: #000000;
+    background-color: #ffffff;
+    color: #6666ff;
 }
 
 .navbar-red .navbar-toggle:hover{
@@ -63,27 +66,40 @@
 }
 
 .navbar-red .navbar-toggle .icon-bar{
-    background-color: black;
+    background-color: #6666ff;
 }
 
 .navbar-red .dropdown-menu{
     color: black;
-    background-color: #ffffff;
+    background-color: #6666ff;
+    
 
 }
 
+.navbar-red .dropdown-menu a{
+    padding: 9px;
+    font-weight: bold;
+}
+
+.navbar-red .dropdown-menu .divider{
+    margin: 0px;
+}
 /* -----------------END : navbar tools --------------*/
 
 /* --------------Start : Layout style--------------- */
 #header{
-    background-color: white;
+    background-color: #ffffff;
 }
 
 body{
     background-color: #f2f2f2;
     /*font-family: 'Archivo Black';*/
+    color: #003366;
 }
 
+#toolMenu {
+    
+}
 
 #toolMenu table{
     width: 100%
@@ -119,11 +135,47 @@ body{
 
 }
 
+
+#storeToolLeft{
+    background-color: #e0e0e0;
+    padding: 10px;
+    width: fit-content;
+    margin: 0px;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+    height: 44px;
+}
+
+#storeToolLeft:hover{
+    background-color: #cccccc;
+}
+
+#storeToolLeft:first-child{
+    margin-left: 20px;
+}
+
+#storeToolLeft td{
+    padding: 2px;
+}
+
+#storeToolLeft a{
+    text-decoration: none;
+    color: #666666;
+}
+
+#storeToolLeft img{
+    width: 27px;
+    height: 100%;
+}
+
+
+
 #storeTool{
     background-color: #e0e0e0;
     padding: 10px;
     width: fit-content;
-    margin: 10px;
+    margin: 0px;
     text-align: center;
     float: right;
     font-size: 16px;
@@ -155,10 +207,13 @@ body{
 
 #body{
     margin: 20px;
-    color: #000000;
+    color: #003366;
     /*background-color: #e0e0e0;*/
 }
 
+#body h2{
+    font-weight: bold;
+}
 a.back-to-top {
     display: none;
     width: 60px;
@@ -173,7 +228,7 @@ a.back-to-top {
     z-index: 999;
     right: 20px;
     bottom: 20px;
-    background: #000000 url("../../ressources/up-arrow.png") no-repeat center 43%;
+    background: #6666ff url("../../ressources/up-arrow.png") no-repeat center 43%;
     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
     border-radius: 10%;
@@ -181,8 +236,9 @@ a.back-to-top {
 
 #footer{
     color: white;
-    background-color: #000000;
+    background-color: #6666ff;
     font-size: 16px;
+    font-weight: bold;
 }
 
 #footer p{
@@ -191,11 +247,11 @@ a.back-to-top {
 
 #footer a{
     text-decoration: none;
-    color: #444444;
+    color: #003366;
 }
 
 #footer a:hover{
-    color: #6666ff;
+    color: #000;
     cursor: pointer;
 }
 /* -----------------END : Layout style ------------------*/
@@ -208,7 +264,7 @@ a.back-to-top {
 }
 
 #topList hr{
-    border: 1px #444444 solid;
+    border: 1px #003366 solid;
 }
 
 #homeListElt{
