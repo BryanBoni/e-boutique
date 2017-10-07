@@ -1,4 +1,40 @@
+/* ----------------- Bootstrap tools -----------*/
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+/* ----------------- END: Bootstrap tools -----------*/
+
 /* -----------------navbar tools --------------*/
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    margin-left: 0px;
+    padding-left: 20px;
+}
+
+.nav .nav-center{
+    margin: 0px;
+    float: none;
+}
+
+.navbar-red .collapse .navbar-collapse{
+    text-align: center;
+}
+
+.navbar-red .container-fluid>.navbar-collapse{
+    text-align: center;
+}
+
+.navbar-red .navbar-nav{
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+}
+
 .navbar-red{
     background-color: #6666ff;/*#000000*/;
     color: #ffffff;
@@ -33,7 +69,7 @@
 .navbar-red .navbar-nav a{
     color: #ffffff;/* #ffffff;*/
     font-weight: bold;
-    
+
 }
 
 .navbar-red .navbar-nav a:hover{
@@ -72,7 +108,7 @@
 .navbar-red .dropdown-menu{
     color: black;
     background-color: #6666ff;
-    
+
 
 }
 
@@ -87,18 +123,20 @@
 /* -----------------END : navbar tools --------------*/
 
 /* --------------Start : Layout style--------------- */
+
+
 #header{
     background-color: #ffffff;
 }
 
 body{
-    background-color: #f2f2f2;
+    background-color: #ececec;
     /*font-family: 'Archivo Black';*/
     color: #003366;
 }
 
 #toolMenu {
-    
+
 }
 
 #toolMenu table{
@@ -114,10 +152,14 @@ body{
     background-color: #e0e0e0;
     padding: 10px;
     margin: 20px;
-    width: 100%;
+    /*width: 100%;*/
     font-size: 16px;
     float: right;
 }
+/*
+#searchBar input{
+    width: 100px;
+}*/
 
 #searchBar:hover{
     background-color: #cccccc;
@@ -214,6 +256,11 @@ body{
 #body h2{
     font-weight: bold;
 }
+
+#body hr{
+    border: 1px #003366 solid;
+}
+
 a.back-to-top {
     display: none;
     width: 60px;
@@ -263,10 +310,6 @@ a.back-to-top {
 
 }
 
-#topList hr{
-    border: 1px #003366 solid;
-}
-
 #homeListElt{
     text-align: center;
 }
@@ -274,4 +317,108 @@ a.back-to-top {
 #homeListElt img{
     width: 100%;
 }
+
+/*---- carousel-----*/
+.carousel-indicators{
+    text-align: center;
+    width: fit-content;
+    margin-left: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+}
+.carousel-indicators li{
+    /* background-color: black;*/
+    border-color: white;
+}
+
+.carousel-indicators .active{
+    background-color: white;
+}
+.carousel-control.left{
+    background: none;
+    color: black;
+    /*border: 2px black solid;*/
+}
+
+.carousel-control.right{
+    background: none;
+    color: black;
+}
+.carousel{
+   /* background-color: #003366;*/
+    /*margin-top: 20px;*/
+    /*width: fit-content;*/
+    text-align: center;
+}
+.carousel .item{
+    width: 100%;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    width: 100%;
+    /*max-width: 900px;*/
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+/*------ END : Carousel -----*/
+
 /* ----------------- END : index.php -------------------*/
+
+
+
+/* ----------------- searchPage.php --------------------*/
+#productList{
+    /*text-align: center;*/
+
+}
+
+#product{
+    text-align: center;
+    /*background-color: #000;*/
+    border: 10px #ececec solid;
+    background-color: transparent;
+
+}
+
+#product:hover{
+    border: 0px #ececec solid;
+}
+
+#product a{
+}
+
+#product img{
+    width: 100%;
+
+}
+
+#productWarper{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.fa-star{
+    color: orange;
+}
+
+.fa-star-half-o{
+    color: orange;
+}
+
+.fa-star-o{
+    color: orange;
+}
+
+/* ----------------- END : searchPage.php --------------*/
+
+/* ----------------- productPage.php --------------*/
+#productImage img{
+    width: 100%;
+}
+
+#productDesc{
+    border: 1px solid black;
+}
+
+/* ----------------- END : productPage.php --------------*/
