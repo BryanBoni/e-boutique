@@ -1,18 +1,22 @@
 /* ------------------ custom tools --------------*/
 .btn-custom{
     background-color: #2bb04a;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     width: 100%;
 }
 .btn-custom:hover{
-    color: #fff;
+    color: black;
 }
 .btn-custom:active{
     background-color: #6db384;
-    color: #fff;
+    color: black;
+}
+
+a{
+    color: #3399ff;/*#333333*/
 }
 /* ----------------- End : custom tools ---------*/
 
@@ -54,8 +58,8 @@
 }
 
 .navbar-red{
-    background-color: #6666ff;/*#000000*/;
-    color: #ffffff;
+    background-color: #fff;/*#fff000*/;
+    color: #000;
     /*border: 1px #444444 solid;*/
     border-radius: 0px;
     font-size: 16px;
@@ -70,49 +74,49 @@
 
 .navbar-red .navbar-brand:hover{
     font-size:  20px;
-    color: #ffffff;
+    color: #000;
 }
 
 .navbar-red a{
-    color: #ffffff;/* #ffffff;*/
+    color: #000;/* #000;*/
 }
 
 .navbar-red a:hover{
     /*color : black;*/
-    background-color: #003366;
+    background-color: #ececec;
 
     background-image: none;
 }
 
 .navbar-red .navbar-nav a{
-    color: #ffffff;/* #ffffff;*/
+    color: #000;/* #000;*/
     font-weight: bold;
 
 }
 
 .navbar-red .navbar-nav a:hover{
     /*color : black;*/
-    background-color: #003366;
-    color: #ffffff;
+    background-color: #ececec;
+    color: #000;
     background-image: none;
 }
 
 .navbar-red .nav .open>a{
     /*color : black;*/
-    background-color: #003366;
+    background-color: #ececec;
     background-image: none;
 }
 
 .navbar-red .nav>li>a:focus, .nav>li>a:hover{
-    background-color: #003366;
+    background-color: #ececec;
 
-    color: #ffffff;
+    color: #000;
 }
 
 
 .navbar-red .navbar-toggle{
-    background-color: #ffffff;
-    color: #6666ff;
+    background-color: #000;
+    color: #fff;
 }
 
 .navbar-red .navbar-toggle:hover{
@@ -120,12 +124,12 @@
 }
 
 .navbar-red .navbar-toggle .icon-bar{
-    background-color: #6666ff;
+    background-color: #fff;
 }
 
 .navbar-red .dropdown-menu{
     color: black;
-    background-color: #6666ff;
+    background-color: #fff;
 
 
 }
@@ -144,13 +148,13 @@
 
 
 #header{
-    background-color: #ffffff;
+    background-color: #000;
 }
 
 body{
-    background-color: #ececec;
+    background-color: #333333;
     /*font-family: 'Archivo Black';*/
-    color: #003366;
+    color: white;
 }
 
 #toolMenu {
@@ -158,7 +162,8 @@ body{
 }
 
 #toolMenu table{
-    width: 100%
+    width: 100%;
+    color: #666666;
 }
 
 #toolMenu table td{
@@ -167,7 +172,7 @@ body{
 }
 
 #searchBar{
-    background-color: #e0e0e0;
+    background-color: #ececec;
     padding: 10px;
     margin: 20px;
     /*width: 100%;*/
@@ -185,12 +190,12 @@ body{
 
 #searchBarButton{
     background-color: transparent;
-    border: 0px hidden #000;
+    border: 0px hidden #fff;
 }
 
 #searchBarText{
     background-color: transparent;
-    border: 0px hidden #000;
+    border: 0px hidden #fff;
     color: black;
 
 }
@@ -264,7 +269,7 @@ body{
 
 #body{
     margin: 20px;
-    color: #003366;
+    color: #333333;
     /*background-color: #e0e0e0;*/
 }
 
@@ -273,7 +278,7 @@ body{
 }
 
 #body hr{
-    border: 1px #003366 solid;
+    border: 1px white solid;
 }
 
 a.back-to-top {
@@ -290,15 +295,16 @@ a.back-to-top {
     z-index: 999;
     right: 20px;
     bottom: 20px;
-    background: #6666ff url("../../ressources/up-arrow.png") no-repeat center 43%;
+    background: #fff url("../../ressources/up-arrow_black.png") no-repeat center 43%;
+    color: black;
     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
     border-radius: 10%;
 }
 
 #footer{
-    color: white;
-    background-color: #6666ff;
+    color: black;
+    background-color: #fff;
     font-size: 16px;
     font-weight: bold;
 }
@@ -309,11 +315,11 @@ a.back-to-top {
 
 #footer a{
     text-decoration: none;
-    color: #003366;
+    color: #333333;
 }
 
 #footer a:hover{
-    color: #000;
+    color: #666666;
     cursor: pointer;
 }
 /* -----------------END : Layout style ------------------*/
@@ -340,28 +346,28 @@ a.back-to-top {
     margin-left: 0px;
     padding: 10px;
     border-radius: 5px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(255 ,255 ,255 ,0.5);
 }
 .carousel-indicators li{
     /* background-color: black;*/
-    border-color: white;
+    border-color: black;
 }
 
 .carousel-indicators .active{
-    background-color: white;
+    background-color: black;
 }
 .carousel-control.left{
     background: none;
-    color: black;
+    color: white;
     /*border: 2px black solid;*/
 }
 
 .carousel-control.right{
     background: none;
-    color: black;
+    color: white;
 }
 .carousel{
-    /* background-color: #003366;*/
+    /* background-color: #333333;*/
     /*margin-top: 20px;*/
     /*width: fit-content;*/
     text-align: center;
@@ -390,8 +396,8 @@ a.back-to-top {
 
 #product{
     text-align: center;
-    /*background-color: #000;*/
-    border: 10px #ececec solid;
+    /*background-color: #fff;*/
+    border: 10px #333333 solid;
     background-color: transparent;
 
 }
@@ -410,7 +416,7 @@ a.back-to-top {
 
 #productWarper{
     padding: 10px;
-    background-color: white;
+    background-color: black;
     border-radius: 10px;
 }
 
@@ -447,31 +453,24 @@ a.back-to-top {
 
 /* ----------------- productPage.php --------------*/
 #productPage{
-    background-color: white;
+    background-color: black;
     border-radius: 5px;
 }
 
-    /* -------------------- ProductImageGallery --------------*/
-    #productImage{
-        border: 1px black solid;
-    }
+#productImage{
+    border: 1px black solid;
+}
 
-    #productImage #PILmain{
-        width: 100%;
-    }
-    
-    .PILitem{
-        width: 100px;
-        height: 100px;
-    }
-    /* -------------------- END:ProductImageGallery --------------*/
+#productImage img{
+    width: 100%;
+}
 
 #productPrice{
-    /*border: 1px black solid;*/
+    border: 1px black solid;
 }
 
 #productDesc{
-   /* border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 /* ----------------- END : productPage.php --------------*/

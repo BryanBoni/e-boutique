@@ -12,7 +12,7 @@ $content = "";
 //for($i = 0; $i < 10; $i++){
     $content = $content 
             . "<div id=\"row\">"
-                . "<div id=\"frontPoster\">"
+                . "<div id=\"frontPoster\" class=\"hidden-xs\">"
                     . "    
                         <div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">
                             <!-- Carousel indicators -->

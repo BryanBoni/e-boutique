@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +36,7 @@
                                 </td>
                                 <td>
                                     <div id="storeToolLeft">
-                                        <a href="https://www.facebook.com/"  placeholder="Voir mon compte client"><b><img src="<?php if ($home == 1) { echo "";} else { echo "../"; } ?>ressources/Facebook_icon.svg.png"/></b> </a>
+                                        <a href="https://www.facebook.com/"  placeholder="Voir mon compte client"><b class="fa fa-facebook-official" aria-hidden="true"></b> </a>
                                     </div>
                                 </td>
                                 <td>
